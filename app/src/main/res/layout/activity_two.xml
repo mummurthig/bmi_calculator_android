@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTwo"
+    android:background="@drawable/background_img">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:hint="Enter Your Wheight in KG"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:hint="Enter Your Height in M"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:background="@color/colorwhite"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="calcbmi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your BMI"
+        android:id="@+id/newtext1"
+        android:layout_marginTop="36dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Result"
+        android:id="@+id/newtext2"
+        android:layout_marginTop="43dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/newtext1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
